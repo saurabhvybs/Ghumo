@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+  font-family: Quicksand, sans-serif;
+  }
+  
+  .topArea {
+     background-image: url("https://www.dropbox.com/s/dbbi1ix4w0acmhy/backgrounddark.jpg?raw=1");
+     background-attachment: fixed;
+     background-position: top center; 
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 300px;
+  }
+  
+  .accP {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 0.8em 1em;
+  }
+  
+  .accomJSstring {
+    padding-top: 1em;
+    font-size: 1.2em;
+  }
+  
+  #pageTitle {
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    font-size: 4em;
+    padding-top: 1.5em;  
+  }
+  
+  .midContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  
+  .boxMid, .boxLeft, .boxRight {
+    width: 320px;
+    height: 830px;
+    min-width: 290px;
+    background-color: white;
+    border: solid 1px lightGray;
+    margin: 1em 2em;
+    margin-top: 1.8em;
+    padding: 1em;  
+  }
+  
+  .tresImg {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .boxHeads {
+    text-align: center;
+    font-weight: lighter;
+    color: #304b4b;
+    font-size: 2.5em;
+    margin-top: 0.4em;
+  }
+  
+  .sitesNamesUL, .foodNamesUL {
+    list-style: none;
+    text-align: center;
+    font-size: 1.8em;
+    color:#304b4b;
+    margin-top: 1.5em;
+    line-height: 2em;
+  }
+  
+  .menusContainer {
+    margin-top: 2em;
+    text-align: center;
+  }
+  
+  .menuType, .guests,  .arrvDate, .departDate {
+    font-family: Quicksand, sans-serif;
+    padding: 0.7em 0em;
+  }
+  
+  select {
+    font-family: Quicksand, sans-serif;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  input {
+    font-family: Quicksand, sans-serif;
+    padding: 0.5em;
+    margin-left: 10px;
+  }
+  
+  #searchButton {
+      font-size: 0.75em;
+      font-weight: bold;
+      font-family: Quicksand, sans-serif;
+      color: darkslategray;
+      background-color: white;
+      border: 1px solid;
+      border-radius: 50px;
+      padding: 0.7em 1em;
+      margin-top: 2em;
+    }
+  
+  .contactStuff {
+    text-align: center;
+    color: #304b4b;
+  }
+  
+  /*animated cross - credit W3 schools*/
+  .menuButton {
+      position: absolute;
+      right: 10px;
+      display: inline-block;
+      cursor: pointer;
+      padding: 1em;
+  }
+  
+  .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+      opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  
+  /*OK, now back to me */
+  
+  .dropdownZone {
+    padding: 0;
+    margin:0;
+    padding-left: 2em;
+    padding-top: 0.6em;
+    display: none;
+    border-style: none;
+    width: 50em;
+    height: 18.2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(48, 48, 63, 0.66);  
+  }
+  
+  /*dropdown styling*/
+  
+  body {
+  font-family: Quicksand, sans-serif;
+  }
+  
+  .wholeLot li {
+    font-size: 1.8em;
+    width: 5.3em;
+    height: 2em;
+    margin: 0.2em;
+  }
+  
+   .topMenuItem {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;  
+  }
+  
+  .topMenuItem li {
+    list-style: none;
+    font-size: 1em;
+    position: absolute;
+    right: 0.5em;
+  }
+  
+   .submenu {
+    display: none;
+    position: absolute;
+    padding-top: 1.7em;
+    padding-left: 0.3em;
+    font-size: 0.8em;
+  }
+  
+  .submenu li {
+   position: relative;
+   padding-right: 0.5em;
+   width: 5em;
+  }
+  
+  .subsubmenu {
+    display: none;
+    position: absolute;
+    padding-left: 1.3em;
+  }
+  
+  .subsubmenu li {
+    position: relative;
+    left: 4.4em;
+    bottom: 1.41em;
+    width: 5.2em;
+    color: white;
+    background-color: rgba(95, 120, 140, 0.7);
+  }
+  
+  .submenu .subsubmenu {
+    display: none;
+    list-style: none;
+  }
+  
+  .topMenuItem:hover .submenu {
+      display: block;   
+  }
+  
+  .submenu li:hover .subsubmenu {
+    display: block;
+  }
+  
+  li ul li:hover, .wholeLot li:hover {
+    background-color: rgba(95, 120, 140, 0.4);
+  }
+  
+  a:visited, a:link {
+      text-decoration: none;
+      color: white;
+  }
+  
+  @media only screen and (max-width: 900px) {
+  .dropdownZone {
+    width: 10em;
+    display: none;
+    padding: 0;
+    margin:0;
+    padding-top: 4em;
+    height: 14.8em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(48, 48, 63, 0.66);
+  }
+  
+  .wholeLot li {
+    font-size: 1.4em;
+  }
+  
+   .topMenuItem {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .topMenuItem li {
+    list-style: none;
+    font-size: 1em;
+    background-color: slategray; 
+  }
+  
+   .submenu {
+    display: none;
+    position: absolute;
+    text-align: right;  
+    left: -4.7em;
+    top: -1.9em;
+  }
+  
+  .submenu li {
+   position: relative;
+   width: 4.2em;
+   padding: 0.1em;
+  }
+  
+  .subsubmenu {
+    display: none;
+    position: absolute;  
+    left: -12.3em;
+    top: 1.2em;
+  }
+  
+  .subsubmenu li {
+    width: 6em;
+    position: relative;
+    color: white;
+    background-color: rgba(95, 120, 140, 0.7);
+    }
+  
+  .submenu .subsubmenu {
+    display: none;
+    list-style: none;
+  }
+  
+  }
+  
+  
+  @media only screen and (max-width: 360px) {
+    
+  .boxMid, .boxLeft, .boxRight {
+    width: 20%;
+    height: 50%;
+    margin: 0.5em 0.3em;
+    margin-top: 1.5em;
+    padding: 0.2em;  
+  }
+  .boxHeads {
+    text-align: center;
+    font-weight: lighter;
+    color: #304b4b;
+    font-size: 2.1em;
+    margin-top: 0.4em;
+  }
+    
+    .wholeLot li {
+    font-size: 1.1em;
+  }
+    .topMenuItem li {
+    font-size: 1em;
+  }
+  
+    .submenu li {
+   width: 4.1em;
+   padding: 0.1em;
+  }
+    .subsubmenu li {
+    left: 5.45em;
+    bottom: 1.41em;
+    width: 5em;
+  }
+  
+  
+  }

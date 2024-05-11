@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/location2.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.js">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <section id="header">          
+          <nav id="nav-bar">
+            <ul>
+              <li><a class="nav-link" href="#header">Welcome</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#locations">Locations</a></li>
+            </ul>
+          </nav>
+          <div class="header-container">
+            <img id="header-img" src="" alt=""> <!-- only inside to complete all tests of FCC -->
+            <div class="header-text">
+              <h1>Schweber</h1><br>
+              <p>Where your adventures begin</p>
+            </div>            
+          </div>               
+        <section>
+
+        <section id="about">
+        <div class="video-container">          
+        <video id="video" autoplay muted loop >
+                 <source src="https://app.coverr.co/s3/mp4/Infinity.mp4" type="video/mp4" alt="Ocean">
+              </video>
+              <div class="about-text">
+                 <h1>About</h1>
+                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
+            </div>
+        </div>
+        </section>
+        
+        <section id="locations">
+        <div class="container">
+          <div class="headline">
+            Locations
+          </div>
+        <div class="flex-container">
+          <div class="hover-image" data-aos="zoom-in">
+            <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="New York">
+            <div class="overlay">New York</div>
+          </div>
+          <div class="hover-image" data-aos="zoom-in">
+            <img src="https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Barcelona">
+            <div class="overlay">Barcelona</div>
+          </div>
+          <div class="hover-image" data-aos="zoom-in">
+            <img src="https://images.pexels.com/photos/1790573/pexels-photo-1790573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Amsterdam">
+            <div class="overlay">Amsterdam</div>
+          </div>
+            <div class="hover-image" data-aos="zoom-in">
+            <img src="https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Paris">
+            <div class="overlay">Paris</div>
+          </div>
+            <div class="hover-image" data-aos="zoom-in">
+            <img src="https://images.pexels.com/photos/22804/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Singapore">
+            <div class="overlay">Singapore</div>
+          </div>
+          <div class="hover-image" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1523816572-a1a23d1a67b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="Dubai">
+              <div class="overlay">Dubai</div>
+            </div>
+                    <div class="hover-image" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1543961112-fb4748ddf637?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1329&q=80" alt="Tokio">
+              <div class="overlay">Tokio</div>
+            </div>
+                              <div class="hover-image" data-aos="zoom-in">
+              <img src="https://images.unsplash.com/photo-1493863154320-7fe91fec2e94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Bangkok">
+              <div class="overlay">Bangkok</div>
+            </div>
+        </div>
+      </div>
+        <div class="news-container">
+          <div class="headline">
+              Newsletter
+            </div>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">                        
+            <input type="email" id="email" name="email" placeholder="Enter your Email to get weekly news">
+            <input type="submit" id="submit" value="Submit" >
+          </form> 
+          
+      </div>
+
+         </section>
+         <script>//Product Landign Page for a Travel-Site
+
+            /*TODOS:
+            -change Navbar
+            -viewport stuff
+            -fix h1 "about" responsive
+            -clean up code
+            -headline responsive (about)
+            -navigation arrows
+            */
+            
+            AOS.init({
+              duration: 1200,
+            })
+            </script>
+</body>
+</html>
